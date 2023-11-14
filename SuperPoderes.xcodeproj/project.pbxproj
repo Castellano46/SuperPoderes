@@ -14,6 +14,8 @@
 		EB882AF82B0362D40028BE64 /* SuperPoderesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB882AF72B0362D40028BE64 /* SuperPoderesTests.swift */; };
 		EB882B022B0362D40028BE64 /* SuperPoderesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB882B012B0362D40028BE64 /* SuperPoderesUITests.swift */; };
 		EB882B042B0362D40028BE64 /* SuperPoderesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB882B032B0362D40028BE64 /* SuperPoderesUITestsLaunchTests.swift */; };
+		EB882B142B0368540028BE64 /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = EB882B132B0368540028BE64 /* ViewInspector */; };
+		EB882B1C2B036A730028BE64 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = EB882B1B2B036A730028BE64 /* Localizable.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		EB882AFD2B0362D40028BE64 /* SuperPoderesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperPoderesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB882B012B0362D40028BE64 /* SuperPoderesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperPoderesUITests.swift; sourceTree = "<group>"; };
 		EB882B032B0362D40028BE64 /* SuperPoderesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperPoderesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EB882B112B0367460028BE64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EB882B1B2B036A730028BE64 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB882B142B0368540028BE64 /* ViewInspector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,11 +100,13 @@
 		EB882AE42B0362D20028BE64 /* SuperPoderes */ = {
 			isa = PBXGroup;
 			children = (
+				EB882B112B0367460028BE64 /* Info.plist */,
+				EB882B102B0366D30028BE64 /* Old */,
 				EB882AE52B0362D20028BE64 /* SuperPoderesApp.swift */,
-				EB882AE72B0362D20028BE64 /* ContentView.swift */,
 				EB882AE92B0362D30028BE64 /* Assets.xcassets */,
 				EB882AEB2B0362D30028BE64 /* SuperPoderes.entitlements */,
 				EB882AEC2B0362D30028BE64 /* Preview Content */,
+				EB882B1B2B036A730028BE64 /* Localizable.xcstrings */,
 			);
 			path = SuperPoderes;
 			sourceTree = "<group>";
@@ -129,6 +136,14 @@
 			path = SuperPoderesUITests;
 			sourceTree = "<group>";
 		};
+		EB882B102B0366D30028BE64 /* Old */ = {
+			isa = PBXGroup;
+			children = (
+				EB882AE72B0362D20028BE64 /* ContentView.swift */,
+			);
+			path = Old;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,6 +160,9 @@
 			dependencies = (
 			);
 			name = SuperPoderes;
+			packageProductDependencies = (
+				EB882B132B0368540028BE64 /* ViewInspector */,
+			);
 			productName = SuperPoderes;
 			productReference = EB882AE22B0362D20028BE64 /* SuperPoderes.app */;
 			productType = "com.apple.product-type.application";
@@ -215,8 +233,12 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = EB882AD92B0362D20028BE64;
+			packageReferences = (
+				EB882B122B0368540028BE64 /* XCRemoteSwiftPackageReference "ViewInspector" */,
+			);
 			productRefGroup = EB882AE32B0362D20028BE64 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -234,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB882AEE2B0362D30028BE64 /* Preview Assets.xcassets in Resources */,
+				EB882B1C2B036A730028BE64 /* Localizable.xcstrings in Resources */,
 				EB882AEA2B0362D30028BE64 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +447,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SuperPoderes/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -433,7 +457,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -462,6 +486,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SuperPoderes/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -471,7 +496,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -617,6 +642,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EB882B122B0368540028BE64 /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nalexn/ViewInspector";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EB882B132B0368540028BE64 /* ViewInspector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB882B122B0368540028BE64 /* XCRemoteSwiftPackageReference "ViewInspector" */;
+			productName = ViewInspector;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EB882ADA2B0362D20028BE64 /* Project object */;
 }

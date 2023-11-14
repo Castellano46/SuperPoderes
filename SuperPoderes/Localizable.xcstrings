@@ -1,0 +1,24 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Test" : {
+      "comment" : "Localizable.strings\n  SuperPoderes\n\n  Created by Pedro on 14/11/23.",
+      "extractionState" : "migrated",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Test ENG"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Test ESP"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
