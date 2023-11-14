@@ -100,6 +100,10 @@
 		EB882AE42B0362D20028BE64 /* SuperPoderes */ = {
 			isa = PBXGroup;
 			children = (
+				EB882B1F2B036BF80028BE64 /* Views */,
+				EB882B242B036C3D0028BE64 /* Services */,
+				EB882B252B036C500028BE64 /* ViewModels */,
+				EB882B272B036C700028BE64 /* Models */,
 				EB882B112B0367460028BE64 /* Info.plist */,
 				EB882B102B0366D30028BE64 /* Old */,
 				EB882AE52B0362D20028BE64 /* SuperPoderesApp.swift */,
@@ -142,6 +146,66 @@
 				EB882AE72B0362D20028BE64 /* ContentView.swift */,
 			);
 			path = Old;
+			sourceTree = "<group>";
+		};
+		EB882B1F2B036BF80028BE64 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EB882B202B036C020028BE64 /* Home */,
+				EB882B222B036C140028BE64 /* HeroesList */,
+				EB882B232B036C1F0028BE64 /* HeroesSeries */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EB882B202B036C020028BE64 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EB882B222B036C140028BE64 /* HeroesList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HeroesList;
+			sourceTree = "<group>";
+		};
+		EB882B232B036C1F0028BE64 /* HeroesSeries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HeroesSeries;
+			sourceTree = "<group>";
+		};
+		EB882B242B036C3D0028BE64 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EB882B252B036C500028BE64 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EB882B262B036C600028BE64 /* Principal */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EB882B262B036C600028BE64 /* Principal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Principal;
+			sourceTree = "<group>";
+		};
+		EB882B272B036C700028BE64 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
